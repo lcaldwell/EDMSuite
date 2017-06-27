@@ -33,6 +33,7 @@ namespace ScanMaster.Acquire.Plugin
             scanOutputPlugins.Add("TCL scan", typeof(TCLOutputPlugin));
 #if DECELERATOR
             scanOutputPlugins.Add("Deceleration hardware analog output", typeof(DecelerationHardwareAnalogOutputPlugin));
+            patternPlugins.Add("MOTMaster", typeof(MMPatternPlugin));
 #endif
             // switchOutputPlugins
 			switchOutputPlugins.Add("No switch", typeof(NullSwitchPlugin));
@@ -40,6 +41,8 @@ namespace ScanMaster.Acquire.Plugin
 			// patternPlugins
 			patternPlugins.Add("No pattern", typeof(NullPGPlugin));
 			patternPlugins.Add("Pulsed rf scan", typeof(PulsedRFScanPatternPlugin));
+            patternPlugins.Add("Pulsed rf scan with super pumping", typeof(SuperPumpingPulsedRFScanPatternPlugin));
+
 			patternPlugins.Add("Common raman", typeof(CommonRamanPatternPlugin));
 			patternPlugins.Add("Pump-probe", typeof(PumpProbePatternPlugin));
 			patternPlugins.Add("Deceleration", typeof(DecelerationPatternPlugin));

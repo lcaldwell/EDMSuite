@@ -15,6 +15,7 @@ namespace ScanMaster.Acquire.Plugin
      XmlInclude(typeof(GuidePatternPlugin)),
 	 XmlInclude(typeof(CommonRamanPatternPlugin)),
 	 XmlInclude(typeof(PulsedRFScanPatternPlugin)),
+     XmlInclude(typeof(SuperPumpingPulsedRFScanPatternPlugin)),
 	 XmlInclude(typeof(PumpProbePatternPlugin)),
      XmlInclude(typeof(DualAblationPatternPlugin)),
      XmlInclude(typeof(DualValvePatternPlugin)),
@@ -22,7 +23,8 @@ namespace ScanMaster.Acquire.Plugin
      XmlInclude(typeof(AomModulatedPatternPlugin)),
      XmlInclude(typeof(AomLevelControlPatternPlugin)),
      XmlInclude(typeof(ImagingPatternPlugin)),
-     XmlInclude(typeof(MOTPatternPlugin))]
+     XmlInclude(typeof(MOTPatternPlugin)), 
+     XmlInclude(typeof(MMPatternPlugin))]
 	public abstract class PatternPlugin : AcquisitorPlugin
 	{
 
